@@ -1,0 +1,20 @@
+@import "base/_global";
+@import "base/_variables";
+@import "base/_mixins";
+
+p {
+    padding: 10px;
+}
+
+
+.my-div {
+    background-color: $mainOrange;
+}
+
+h1 {
+    color: blue;
+
+    @mixin atSmall {
+        color: red;
+    }
+}
