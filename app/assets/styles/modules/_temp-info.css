@@ -17,3 +17,8 @@
 .temp-info__btn-container {
   top: -30px;
 }
+
+ #temp-info {
+    float: none;
+    text-align: none;
+  }
