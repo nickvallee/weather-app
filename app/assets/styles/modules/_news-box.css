@@ -1,0 +1,27 @@
+#news-box {
+  width: 40%;
+  /*#a7c6ef*/
+  opacity: 0.5;
+  float: right;
+  display:none;
+}
+
+#news-p {
+  color: white;
+  font-size: 1.5rem;
+  opacity: default;
+  font-weight: 300;
+  padding-left: 2%;
+}
+
+#news-p {
+    font-size: 2rem;
+  }
+  #news-box {
+    width: 45%;
+    height: 100px;
+  /*#a7c6ef*/
+    opacity: 0.5;
+    float: right;
+    display: block;
+}

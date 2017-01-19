@@ -1,0 +1,9 @@
+#w-details {
+  padding-top: 1%;
+}
+
+#w-details li {
+  margin-left: 2rem;
+  list-style-type:none;
+  float: left;
+}

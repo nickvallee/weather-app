@@ -4,26 +4,59 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title> Template </title>
+    <title> Nick's Weather App </title>
 
-<!-- build:css assets/styles/styles.css -->
-<link rel="stylesheet" href="temp/styles/styles.css">
-<!-- endbuild -->
+    <!-- build:css assets/styles/styles.css -->
+    <link rel="stylesheet" href="temp/styles/styles.css">
+    <!-- endbuild -->
 
 </head>
 
 <body>
 
-<div class="my-div">
 
-<h1 class="heading"> This is myy template </h1>
 
-<p> This is a template project </p>
 
-</div>
+    <div class="container">
+        <div class="weather-window">
+            <h1 id="weather-window__h1"> Loading Location... </h1>
+            <div id="weather-icon">
+                <h2 id "weather-icon__h2">loading...</h2>
+                <canvas id="icon1" width="128" height="128"></canvas>
+                <div id="temp-info">
+                    <p class="temp-info__temp"> 0.0 Fº </p>
+                    <p class="temp-info__feels-like"> 0.0º </p>
+                    <div class="temp-info__btn-containter">
+                        <a href="#" class="btn btn-system">Celsius</a>
+                    </div>
 
-<!-- build:js assets/scripts/scripts.js -->
-<script src="temp/scripts/App.js"> </script>
-<!-- build: endbuild -->
+                </div>
+                <!--temp-->
+            </div>
+            <!-- weather icon -->
+            <div id="news-box">
+                <p id="news-p"> Alert...</p>
+            </div>
+            <!-- news box -->
+            <row class="row">
+                <div class="col-sx-4" id="w-details">
+
+                    <ul id="w-details__ul">
+                    </ul>
+                </div>
+        </div>
+        <!-- row -->
+
+    </div>
+    <!-- weather-window -->
+    </div>
+    <!-- container -->
+
+
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+
+    <!-- build:js assets/scripts/scripts.js -->
+    <script src="temp/scripts/App.js">
+    </script>
+    <!-- build: endbuild -->
 </body>
-

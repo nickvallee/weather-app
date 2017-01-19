@@ -1,14 +1,84 @@
-p {
-    padding: 10px;
+
+@import "modules/_temp-info";
+@import "modules/_weather-window";
+.sunny {
+  background: url("https://www.dropbox.com/s/2p52ex76m38z817/blue-sunny-sky.jpg?raw=1");
 }
-.my-div {
-    background-color: #d59541;
+.cloudy {
+  background: url("https://www.dropbox.com/s/hjlu4ai3rz70r42/cloudy.jpg?raw=1");
 }
-h1 {
-    color: blue;
+.rainy {
+  background: url('https://www.dropbox.com/s/ejd9h1dmzvz2agr/Rainy-Weather.jpg?raw=1');
 }
-@media (min-width: 530px) {
-    h1 {
-        color: red;
-    }
+.snowy {
+  background: url('https://www.dropbox.com/s/0jnmbc2ld15sbef/Snow-Weather-Background.jpg?raw=1');
+}
+.foggy {
+  background: url('https://www.dropbox.com/s/s0gjbfcgrdznl9w/fogggy.jpg?raw=1');
+}
+.windy {
+  background: url('https://wallpaperscraft.com/image/field_grass_rain_clouds_wind_weather_48127_1600x1200.jpg');
+}
+#news-box {
+  width: 40%;
+  /*#a7c6ef*/
+  opacity: 0.5;
+  float: right;
+  display:none;
+}
+#news-p {
+  color: white;
+  font-size: 1.5rem;
+  opacity: default;
+  font-weight: 300;
+  padding-left: 2%;
+}
+#news-p {
+    font-size: 2rem;
+  }
+#news-box {
+    width: 45%;
+    height: 100px;
+  /*#a7c6ef*/
+    opacity: 0.5;
+    float: right;
+    display: block;
+}
+#w-details {
+  padding-top: 1%;
+}
+#w-details li {
+  margin-left: 2rem;
+  list-style-type:none;
+  float: left;
+}
+#weather-icon {
+  width: 50%;
+  margin-top: -20px;
+  margin-left: 2%;
+}
+#weather-icon__h2 {
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("https://www.dropbox.com/s/2p52ex76m38z817/blue-sunny-sky.jpg?raw=1");
+
+}
+h2 {
+  color: yellow;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  margin-left: 9%;
+}
+canvas {
+  float: left;
+  padding-bottom: 10px;
+}
+/*rules for smaller screens */
+.btn {
+  background: #bed4f7;
+  width: 126px;
+}
+#weather-icon, #news-box, #w-details{
+  display: inline-block;
 }

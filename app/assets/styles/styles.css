@@ -1,20 +1,40 @@
 @import "base/_global";
 @import "base/_variables";
 @import "base/_mixins";
+@import "modules/_background-images";
+@import "modules/_news-box";
+@import "modules/_temp-info";
+@import "modules/_w-details";
+@import "modules/_weather-icon";
+@import "modules/_weather-window";
 
-p {
-    padding: 10px;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: url("https://www.dropbox.com/s/2p52ex76m38z817/blue-sunny-sky.jpg?raw=1");
+
+}
+
+h2 {
+  color: yellow;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+  margin-left: 9%;
+}
+
+canvas {
+  float: left;
+  padding-bottom: 10px;
+}
+
+/*rules for smaller screens */
+
+.btn {
+  background: #bed4f7;
+  width: 126px;
 }
 
 
-.my-div {
-    background-color: $mainOrange;
-}
-
-h1 {
-    color: blue;
-
-    @mixin atSmall {
-        color: red;
-    }
+#weather-icon, #news-box, #w-details{
+  display: inline-block;
 }
