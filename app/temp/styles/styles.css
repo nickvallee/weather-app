@@ -1,6 +1,3 @@
-
-@import "modules/_temp-info";
-@import "modules/_weather-window";
 .sunny {
   background: url("https://www.dropbox.com/s/2p52ex76m38z817/blue-sunny-sky.jpg?raw=1");
 }
@@ -19,31 +16,77 @@
 .windy {
   background: url('https://wallpaperscraft.com/image/field_grass_rain_clouds_wind_weather_48127_1600x1200.jpg');
 }
-#news-box {
-  width: 40%;
+.news-box {
+
+  width: 35%;
+  background-color: #0E26DC;
+  height: 33%;
   /*#a7c6ef*/
-  opacity: 0.5;
   float: right;
-  display:none;
+  opacity: 0.5;
+  margin: 0 5% 0 2%;
+  padding : 0 1% 0 2%;
+  border-radius: 10%;
 }
-#news-p {
+.news-box.news-box__p {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   opacity: default;
   font-weight: 300;
-  padding-left: 2%;
 }
-#news-p {
-    font-size: 2rem;
+.temp-info {
+  width: 30%;
+  padding-left: 9%;
+  float: none;
+
+}
+.temp-info__temp {
+  font-size: 2.75rem;
+  margin-top: -20px;
+  white-space: nowrap;
+}
+.temp-info__feels-like {
+  white-space: nowrap;
+}
+.temp-info__btn-container {
+
+}
+.weather-window {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(23, 88, 208, 0.7);;
+  /*#2771e8*/
+  background: -webkit-linear-gradient(right, rgb(17, 105, 247), #93bcf2);
+  background: linear-gradient(to left, rgb(17, 105, 247), #93bcf2);
+  max-width: 600px;
+  min-height: 300px;
+  border-style: solid;
+  border-color: #c0d5f7;
+  border-width: 1%;
+  border-radius: 3%;
+  color: white;
+  margin-top: 1%;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.weather-window__h1 {
+  color: white;
+  font-weight: 200;
+  text-align: center;
+}
+/* NEED TO BE TURNED INTO MIXIN
+
+@media screen and (min-width: 700px) {
+  .weather-window {
+    width: 70%;
   }
-#news-box {
-    width: 45%;
-    height: 100px;
-  /*#a7c6ef*/
-    opacity: 0.5;
-    float: right;
-    display: block;
-}
+*/
 #w-details {
   padding-top: 1%;
 }
@@ -55,9 +98,18 @@
 #weather-icon {
   width: 50%;
   margin-top: -20px;
-  margin-left: 2%;
+}
+#weather-icon canvas  {
+  display: none;
 }
 #weather-icon__h2 {
+
+}
+.row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
 }
 body {
   font-family: "Roboto", sans-serif;

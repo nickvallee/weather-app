@@ -1,7 +1,11 @@
 #weather-icon {
   width: 50%;
   margin-top: -20px;
-  margin-left: 2%;
+
+  & canvas  {
+    display: none;
+  }
 }
 #weather-icon__h2 {
+
 }

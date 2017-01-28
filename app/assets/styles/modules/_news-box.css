@@ -1,27 +1,20 @@
-#news-box {
-  width: 40%;
+.news-box {
+
+  width: 35%;
+  background-color: #0E26DC;
+  height: 33%;
   /*#a7c6ef*/
-  opacity: 0.5;
   float: right;
-  display:none;
-}
+  opacity: 0.5;
+  margin: 0 5% 0 2%;
+  padding : 0 1% 0 2%;
+  border-radius: 10%;
 
-#news-p {
-  color: white;
-  font-size: 1.5rem;
-  opacity: default;
-  font-weight: 300;
-  padding-left: 2%;
-}
-
-#news-p {
-    font-size: 2rem;
+  &&__p {
+    color: white;
+    font-size: 1rem;
+    opacity: default;
+    font-weight: 300;
   }
-  #news-box {
-    width: 45%;
-    height: 100px;
-  /*#a7c6ef*/
-    opacity: 0.5;
-    float: right;
-    display: block;
 }
+

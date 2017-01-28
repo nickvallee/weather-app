@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <title> Nick's Weather App </title>
-
     <!-- build:css assets/styles/styles.css -->
     <link rel="stylesheet" href="temp/styles/styles.css">
     <!-- endbuild -->
@@ -14,29 +13,26 @@
 
 <body>
 
-
-
-
     <div class="container">
         <div class="weather-window">
-            <h1 id="weather-window__h1"> Loading Location... </h1>
+            <h1 class="weather-window__h1"> Loading Location... </h1>
+            <div class="row">
             <div id="weather-icon">
-                <h2 id "weather-icon__h2">loading...</h2>
+                <h2 id ="weather-icon__h2">loading...</h2>
                 <canvas id="icon1" width="128" height="128"></canvas>
-                <div id="temp-info">
+            </div>
+            <div class="temp-info">
                     <p class="temp-info__temp"> 0.0 Fº </p>
                     <p class="temp-info__feels-like"> 0.0º </p>
-                    <div class="temp-info__btn-containter">
+                    <div class="temp-info__btn-container">
                         <a href="#" class="btn btn-system">Celsius</a>
                     </div>
+            </div>
 
-                </div>
+            <div class="news-box">
+                <p class="news-box__p"> Alert...</p>
             </div>
-            <!-- weather icon -->
-            <div id="news-box">
-                <p id="news-p"> Alert...</p>
             </div>
-            <!-- news box -->
             <row class="row">
                 <div class="col-sx-4" id="w-details">
 
@@ -44,12 +40,9 @@
                     </ul>
                 </div>
         </div>
-        <!-- row -->
 
     </div>
-    <!-- weather-window -->
     </div>
-    <!-- container -->
 
 
     <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>

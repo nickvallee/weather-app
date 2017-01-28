@@ -4,9 +4,11 @@
 @import "modules/_background-images";
 @import "modules/_news-box";
 @import "modules/_temp-info";
+@import "modules/_weather-window";
 @import "modules/_w-details";
 @import "modules/_weather-icon";
-@import "modules/_weather-window";
+@import "modules/_row";
+
 
 
 body {

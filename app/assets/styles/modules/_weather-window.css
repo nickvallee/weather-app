@@ -1,7 +1,9 @@
 .weather-window {
+  display: flex;
+  flex-direction: column;
   background: rgba(23, 88, 208, 0.7);;
   /*#2771e8*/
-  background: linear-gradient(to   left, rgb(17, 105, 247), #93bcf2);
+  background: linear-gradient(to left, rgb(17, 105, 247), #93bcf2);
   max-width: 600px;
   min-height: 300px;
   border-style: solid;
@@ -12,15 +14,19 @@
   margin-top: 1%;
   margin-right: auto;
   margin-left: auto;
-}
 
-#weather-window__h1 {
+  &__h1 {
   color: white;
   font-weight: 200;
   text-align: center;
+  }
+
 }
+
+/* NEED TO BE TURNED INTO MIXIN
 
 @media screen and (min-width: 700px) {
   .weather-window {
     width: 70%;
   }
+*/
