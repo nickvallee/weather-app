@@ -1,9 +1,20 @@
 #w-details {
-  padding-top: 1%;
-}
+  padding: 1% 0 1% 0;
+  display: flex;
+  justify-content: center;
+  margin: auto 0 auto 0;
 
-#w-details li {
-  margin-left: 2rem;
-  list-style-type:none;
-  float: left;
+    & ul {
+        display: inline-flex;
+        font-weight: 200;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 0 0 -20%;
+    }
+
+
+    & li {
+      margin-left: 2rem;
+      list-style-type:none;
+    }
 }

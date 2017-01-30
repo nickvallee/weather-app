@@ -18,38 +18,47 @@
 }
 .news-box {
 
-  width: 35%;
+  width: 30%;
   background-color: #0E26DC;
   height: 33%;
   /*#a7c6ef*/
   float: right;
   opacity: 0.5;
-  margin: 0 5% 0 2%;
-  padding : 0 1% 0 2%;
+  margin: 0 2% 0 5%;
+  padding : 0 1% 0 1%;
   border-radius: 10%;
 }
-.news-box.news-box__p {
+.news-box__p {
   color: white;
-  font-size: 1rem;
+  font-size: 0.8rem;
   opacity: default;
   font-weight: 300;
 }
 .temp-info {
-  width: 30%;
-  padding-left: 9%;
-  float: none;
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: -5% -1% 0 1%;
 
 }
 .temp-info__temp {
-  font-size: 2.75rem;
-  margin-top: -20px;
-  white-space: nowrap;
+  font-size: 1.8rem;
 }
 .temp-info__feels-like {
-  white-space: nowrap;
+  font-size: 0.8rem;
+  font-weight: 200;
+  margin: -10% 0 0 0;
 }
 .temp-info__btn-container {
-
+  margin: 15% 0 0 0;
 }
 .weather-window {
   display: -webkit-box;
@@ -88,49 +97,74 @@
   }
 */
 #w-details {
-  padding-top: 1%;
+  padding: 1% 0 1% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto 0 auto 0;
+}
+#w-details ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  font-weight: 200;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 -20%;
 }
 #w-details li {
   margin-left: 2rem;
   list-style-type:none;
-  float: left;
 }
 #weather-icon {
-  width: 50%;
+  width: 30%;
   margin-top: -20px;
+  margin: 0 0 0 5%;
 }
 #weather-icon canvas  {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 #weather-icon__h2 {
-
+  text-align: center;
 }
 .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 body {
   font-family: "Roboto", sans-serif;
   background: url("https://www.dropbox.com/s/2p52ex76m38z817/blue-sunny-sky.jpg?raw=1");
+  font-weight: 200;
 
 }
 h2 {
   color: yellow;
   font-weight: 100;
   font-family: "Roboto", sans-serif;
-  margin-left: 9%;
 }
 canvas {
   float: left;
-  padding-bottom: 10px;
 }
 /*rules for smaller screens */
 .btn {
   background: #bed4f7;
-  width: 126px;
 }
 #weather-icon, #news-box, #w-details{
-  display: inline-block;
+  /*display: inline-block;*/
 }

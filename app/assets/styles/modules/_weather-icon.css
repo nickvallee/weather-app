@@ -1,11 +1,13 @@
 #weather-icon {
-  width: 50%;
+  width: 30%;
   margin-top: -20px;
+  margin: 0 0 0 5%;
 
   & canvas  {
-    display: none;
+    display: flex;
   }
-}
-#weather-icon__h2 {
 
+  &__h2 {
+    text-align: center;
+  }
 }

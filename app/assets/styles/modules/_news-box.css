@@ -1,18 +1,18 @@
 .news-box {
 
-  width: 35%;
+  width: 30%;
   background-color: #0E26DC;
   height: 33%;
   /*#a7c6ef*/
   float: right;
   opacity: 0.5;
-  margin: 0 5% 0 2%;
-  padding : 0 1% 0 2%;
+  margin: 0 2% 0 5%;
+  padding : 0 1% 0 1%;
   border-radius: 10%;
 
-  &&__p {
+  &__p {
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
     opacity: default;
     font-weight: 300;
   }
