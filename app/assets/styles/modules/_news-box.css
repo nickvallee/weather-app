@@ -1,12 +1,12 @@
 .news-box {
 
   width: 30%;
-  background-color: #0E26DC;
+  background-color: $darkBlue;
   height: 33%;
   /*#a7c6ef*/
   float: right;
   opacity: 0.5;
-  margin: 0 2% 0 5%;
+  margin: 5% 2% 0 5%;
   padding : 0 1% 0 1%;
   border-radius: 10%;
 

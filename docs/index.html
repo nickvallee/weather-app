@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-<link rel="stylesheet" href="assets/styles/styles-e2d9cf29f7.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title> Nick's Weather App </title>
+    <link rel="stylesheet" href="assets/styles/styles-c841dc8d42.css"/>
 
 </head>
 
 <body>
 
-<div class="my-div">
+    <div class="container">
+        <div class="weather-window">
+            <h1 class="weather-window__h1"> Loading Location... </h1>
+            <div class="row">
+                <div class="temp-info">
+                        <p class="temp-info__temp"> 0.0 Fº </p>
+                        <p class="temp-info__feels-like"> 0.0º </p>
+                    <div class="temp-info__btn-container">
+                        <a href="#" class="temp-info__btn-container__btn btn-system">Celsius</a>
+                    </div>
+                </div>
+                <div id="weather-icon">
+                    <h2 id ="weather-icon__h2">loading...</h2>
+                    <canvas id="icon1" width="100" height="100"></canvas>
+                </div>
 
-<h1 class="heading"> This is myy template </h1>
+                <div class="news-box">
+                    <p class="news-box__p"> Alert...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sx-4" id="w-details">
 
-<p> This is a change LAAAAAAAAA something left embarrassing! </p>
+                    <ul id="w-details__ul">
+                    </ul>
+                </div>
+            </div>
 
-</div>
+     </div>
+    </div>
 
+
+    <script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+
+    
